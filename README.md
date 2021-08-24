@@ -1,2 +1,2 @@
 # GA-Javascript-Homework
-Almost every homework from MyStep Program
+Almost every homework from the MyStep Program
