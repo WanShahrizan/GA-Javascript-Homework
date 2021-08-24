@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const rainbowColors = [];
+
+      rainbowColors.push("Orange");
+      rainbowColors.unshift("Red");
+      rainbowColors.push("Yellow");
+      rainbowColors.push("Green", "Blue", "Indigo", "Violet");
+
+      console.log(rainbowColors.length);
+      console.log(`This is the second item ${rainbowColors[1]}`);
+      console.log(rainbowColors[rainbowColors.length - 1]);
+      console.log(`The index for blue is ${rainbowColors.indexOf("Blue")}`);
+
+      let twoColors = rainbowColors.slice(1, 3);
+
+      //   for (let i = 0; i <= 9; i += 1) {
+      //     let curr = rainbowColors[i];
+      //     console.log(curr);
+      //   }
+
+      const nums = [0, 1, 2, 2, 2, 3, 3, 4, 5];
+      nums.splice(3, 3);
+      console.log(nums);
+
+      const arrOfArrs = [
+        ["inner array first item", "inner array second item"],
+        ["first", "second", "third"],
+      ];
+      console.log(arrOfArrs[0][0]);
+      console.log(arrOfArrs[1][2]);
+      //console.table(arrOfArrs);
+
+      for (let x = 0; x < arrOfArrs.length; x++) {
+        for (let y = 0; y < arrOfArrs[x].length; y++){
+          console.log(arrOfArrs[x][y]);
+        }
+      }
+
+      //Your Top Choices
+      let myFav = ["Xbox", "Laptop", "Cat", "Arsenal", "Car"];
+
+      for (let c = 0; c < myFav.length; c += 1) {
+        console.log(`My #${c + 1} choice is ${myFav[c]}`);
+      }
+    </script>
+  </body>
+</html>

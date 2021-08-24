@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Working With User
+      const users = [
+        {
+          email: "groucho@ga.co",
+          password: "chicken",
+          isAdmin: true,
+        },
+        {
+          email: "harpo@ga.co",
+          password: "elephant",
+          isAdmin: false,
+        },
+        {
+          email: "gummo@ga.co",
+          password: "pinkFairyArmadillo",
+          isAdmin: true,
+        },
+        {
+          email: "zeppo@ga.co",
+          password: "dumboOctopus",
+          isAdmin: false,
+        },
+      ];
+
+      function addAcc() {
+        push;
+      }
+
+      function checkAcc(a, b, c) {
+        if (b == users[a].email && c === users[a].password) {
+          console.log("You are logged in");
+        } else {
+          console.log("Sorry, something went wrong");
+        }
+      }
+
+      // let askID = prompt("What's your ID");
+      // let askEmail = prompt("User Email");
+      // let askPassword = prompt("Whats The Password");
+
+      // console.log(checkAcc(askID,askEmail,askPassword));
+
+      // function checkAccountWithoutId(a, b) {
+      //   for (let x = 0; x < users.length; x++) {
+      //     if (a == users[x].email && b === users[x].password) {
+      //       console.log(`You are logged in, your ID number is ${[x]}!`);
+      //     } else {
+      //       console.log("Sorry, something went wrong");
+      //     }
+      //   }
+      // }
+
+      //checkAccountWithoutId("zeppo@ga.co", "dumboOctopus");
+
+      //console.log(users.length);
+
+      //create object first push individual one by one
+      //
+
+      function createAccount(a, b) {
+        let c = users.length + 1;
+        users.push();
+      }
+
+      createAccount("Wan@gmm.co", "lalu");
+
+      //Trying Using forEach()
+      // let indexToBeDeleted = null;
+
+      // for (let i = 0; i < users.length; i += 1) {
+      //   let currentUser = users[i];
+      //   if (currentUser.email === "zeppo@ga.co") {
+      //     indexToBeDeleted = i;
+      //   }
+      // }
+
+      // users.splice(indexToBeDeleted, 1);
+
+      // console.log(users);
+    </script>
+  </body>
+</html>

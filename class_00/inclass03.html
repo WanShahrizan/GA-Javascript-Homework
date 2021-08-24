@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Loop every number from 0 to 10
+      let i = 0,
+        n = 10;
+
+      while (i <= n) {
+        console.log(i);
+        i++;
+      }
+
+      //Log every number from 4 to -16
+      let x = 4;
+      let y = -16;
+
+      while (x >= y) {
+        console.log(x);
+        x -= 1;
+      }
+
+      //Log every fourth number from 8 to 41
+      for (a = 8; a < 41; a = a + 4) {
+        console.log(a);
+      }
+
+      //FizzBuzz
+      for (g = 0; g < 101; g++) {
+        if (g % 15 == 0) {
+          console.log("FizzBuzz");
+        } else if (g % 3 == 0) {
+          console.log("Fizz");
+        } else if (g % 5 == 0) {
+          console.log("Buzz");
+        } else {
+          console.log(g);
+        }
+      }
+    </script>
+  </body>
+</html>

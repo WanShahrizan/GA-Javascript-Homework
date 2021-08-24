@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <h2>Answer are print on Console Log.</h2>
+  <h3>Ctrl + Shift + J -- For Windows</h3>
+  <body>
+    <script>
+      //What bigger number?
+      function biggerNumber(numOne, numTwo) {
+        let x = numOne;
+        let y = numTwo;
+
+        if (x > y) {
+          return x + " is bigger than " + y;
+        } else if (y > x) {
+          return y + " is bigger than " + x;
+        } else {
+          return "Both number are the same value";
+        }
+      }
+
+      console.log(biggerNumber(8, 6));
+
+      //Driving Age
+      let userName = prompt("What's your username?");
+      let age = prompt("How old are you?");
+
+      function drivingAge(name, year) {
+        if (year < 16) {
+          let yearLeft = 16 - year;
+          return (
+            "Sorry " +
+            name +
+            " you still have " +
+            yearLeft +
+            " years before you can drive."
+          );
+        } else {
+          return "Drive into the sunset " + name + "!";
+        }
+      }
+      alert(drivingAge(userName, age));
+      console.log(drivingAge(userName, age));
+    </script>
+  </body>
+</html>

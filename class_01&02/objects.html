@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const bookMarker = [
+        {
+          title: "The Lord of the Rings ",
+          author: "JRR Tolkein",
+          alreadyRead: true,
+        },
+        { title: "The Hobbit", author: "JRR Tolkein", alreadyRead: false },
+        { title: "Star Wars Vol.1", author: "Jason Aaron", alreadyRead: true },
+        {
+          title: "Assassin's Creed The Hawk Trilogy",
+          author: "Eric Corbeyran",
+          alreadyRead: false,
+        },
+      ];
+
+      for (i = 0; i < bookMarker.length; i += 1) {
+        console.log(`'${bookMarker[i].title}', by ${bookMarker[i].author}`);
+      }
+
+      for (i = 0; i < bookMarker.length; i += 1) {
+        if (bookMarker[i].alreadyRead === true) {
+          console.log(
+            `You have already read "${bookMarker[i].title}", by ${bookMarker[i].author}`
+          );
+        } else {
+          console.log(
+            `You still need to read "${bookMarker[i].title}", by ${bookMarker[i].author}`
+          );
+        }
+      }
+
+      //The Recipe Card
+      const favRecipe = {
+        title: "MILO Fruity Muesli",
+        numServing: 1,
+        ingredients: [
+          "1 Stickpack of MILO Less Sugar",
+          "150ml Low Fat Milk",
+          "2 Spoon of Muesli",
+          "1/2 Tea Spoon of Mix Dried Fruits",
+        ],
+      };
+
+      // function iteration() {
+      //   for (i = 0; i < favRecipe.ingredients.length; i++) {
+      //     let msg = `- ${favRecipe.ingredients[i]}`;
+      //     return msg;
+      //   }
+      // }
+
+      // console.log(iteration()); //why only print one?
+
+      console.log(
+        `${favRecipe.title} \n\nServes:  ${
+          favRecipe.numServing
+        } \n\nIngredients:\n\n - ${favRecipe.ingredients.join(" \n - ")}`
+      );
+
+      //The Movie Database
+      const movie = {
+        title: "Coco",
+        duration: 105,
+        director: "Lee Unkrich",
+        cast: [
+          "Anthony Gonzalez",
+          "Gael Garcia Bernal",
+          "Alanna Ubach",
+          "Benjamin Bratt",
+        ],
+      };
+
+      console.log(
+        `'${movie.title}' lasts for ${
+          movie.duration
+        } minutes, and was directed by ${
+          movie.director
+        }. Stars: ${movie.cast.join(", ")}`
+      );
+    </script>
+  </body>
+</html>

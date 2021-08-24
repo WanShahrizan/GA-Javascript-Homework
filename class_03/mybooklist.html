@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My Book List</h1>
+
+    <ul id="booklist"></ul>
+
+    <script>
+      const books = [
+        {
+          title: "The Lord of the Rings",
+          author: "JRR Tolkein",
+          alreadyRead: true,
+          img: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566425108l/33.jpg",
+        },
+        {
+          title: "Horrible Histories Vicious Vikings",
+          author: "Terry Deary",
+          alreadyRead: false,
+          img: "https://cdn.shopify.com/s/files/1/0023/9278/4940/products/vicious-vikings-horrible-histories-9781407135793-16969583558805.jpg?v=1594824311",
+        },
+        {
+          title: "The Storming Normans",
+          author: "Terry Deary",
+          alreadyRead: true,
+          img: "https://cdn.shopify.com/s/files/1/0023/9278/4940/products/9781407165684_1_400x.jpg?v=1605596738",
+        },
+        {
+          title: "Assassin's Creed The Hawk Trilogy",
+          author: "Eric Corbeyran",
+          alreadyRead: false,
+          img: "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/7856/9781785653889.jpg",
+        },
+      ];
+
+      let bookWeb = document.querySelector("#booklist");
+
+      //How to make image dynamic
+      let nodes = books.map(function (element) {
+        if (element.alreadyRead == true) {
+          let li = document.createElement("li");
+          let img = document.createElement("img");
+          img.src = element.img;
+          img.style.width = "300px";
+          img.style.height = "420px";
+          li.style.color = "green";
+          let showTrue = `You have already read "${element.title}" by ${element.author} <br>`;
+          li.innerHTML = showTrue;
+          li.appendChild(img);
+          console.log(showTrue);
+          return li;
+        } else {
+          let li = document.createElement("li");
+          let img = document.createElement("img");
+          img.src = element.img;
+          img.style.width = "300px";
+          img.style.height = "420px";
+          li.style.color = "red";
+          let showFalse = `You still need to read "${element.title}" by ${element.author} <br>`;
+          li.innerHTML = showFalse;
+          li.appendChild(img);
+          console.log(showFalse);
+          return li;
+        }
+      });
+      bookWeb.append(...nodes);
+    </script>
+  </body>
+</html>

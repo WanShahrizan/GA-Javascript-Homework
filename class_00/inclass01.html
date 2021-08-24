@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Answer are print on Console Log.</h2>
+    <h3>Ctrl + Shift + J -- For Windows</h3>
+    <script>
+      //String => Number
+      let string = "4";
+      let s = parseInt(string);
+      console.log(typeof s, s);
+      //Number => String
+      let num = 15;
+      let n = num.toString();
+      console.log(typeof n, n);
+      //Lowercase => Uppercase
+      let lowerCase = "hello!";
+      let uppercaseConvert = lowerCase.toLocaleUpperCase();
+      console.log(uppercaseConvert);
+      //Get Second Character
+      string = "Hello World!";
+      console.log(string.charAt(1));
+      //Concatenation to combine 2 string
+      let stringOne = "Hello ";
+      let stringTwo = "World!";
+      let combine = stringOne.concat(stringTwo);
+      console.log(combine);
+      //Squared by the power of 2 for the number
+      let square = Math.pow(4, 2);
+      console.log(square);
+      //Square Root the number
+      let squareRoot = Math.sqrt(25);
+      console.log(squareRoot);
+    </script>
+  </body>
+</html>

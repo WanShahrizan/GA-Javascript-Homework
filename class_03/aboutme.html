@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <h1>About Me</h1>
+
+    <div id="x"></div>
+
+    <ul>
+      <li>Nickname: <span id="nickname"></span></li>
+      <li>Favorites: <span id="favorites"></span></li>
+      <li>Hometown: <span id="hometown"></span></li>
+    </ul>
+  </body>
+
+  <script>
+    let body = document.querySelector("body");
+    let listOne = document.querySelectorAll("li span")[0];
+    let listTwo = document.querySelectorAll("li span")[1];
+    let listThree = document.querySelectorAll("li span")[2];
+
+    body.style.background = "";
+    (body.style.fontFamily = "Arial"), "sans-serif";
+
+    listOne.setAttribute("id", "fullName");
+    listTwo.setAttribute("id", "email");
+    listThree.setAttribute("id", "skillSet");
+
+    document.querySelector("ul").setAttribute("class", "list-item");
+    document.querySelector("ul").style.background = "red";
+
+    //Append Image
+    let img = document.createElement("img");
+    img.src = "https://cdn.britannica.com/92/215392-050-96A4BC1D/Australian-actor-Chris-Hemsworth-2019.jpg";
+    img.style.width = "300px";
+    img.style.height = "385px";
+    var src = document.getElementById("x");
+    src.appendChild(img);
+  </script>
+</html>

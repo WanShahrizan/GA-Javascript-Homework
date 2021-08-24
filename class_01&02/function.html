@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Answer in Console Log</h1>
+    <script>
+      //Driving Age
+      function drivingAge(canDrive) {
+        if (canDrive > 16) {
+          console.log(`Drive Away!`);
+        } else {
+          let yearsLeft = 16 - canDrive;
+          console.log(
+            `Sorry, you have ${yearsLeft} years to wait until you can drive.`
+          );
+        }
+      }
+      //drivingAge(10);
+
+      //The World Translator
+      function translator(lang) {
+        if (lang == "eng") {
+          console.log("Hello World!");
+        } else if (lang == "fr") {
+          console.log("Bonjour le monde");
+        } else if (lang == "malay") {
+          console.log("Hai Dunia!");
+        } else {
+          console.log("Sorry couldn't understand!");
+        }
+      }
+      //translator("fr");
+
+      //Age Calculator
+      function calcAge(birthYear) {
+        let today = new Date();
+        let ageOne = today.getFullYear() - birthYear - 1;
+        let ageTwo = ageOne + 1;
+
+        console.log(`You are either ${ageOne} or ${ageTwo} years old.`);
+      }
+      //calcAge(1998);
+
+      //Lifetime Supply Calculator
+      function calculateSuply(age, amountPerDay) {
+        let count = amountPerDay * 365 * (100 - age);
+        console.log(
+          `You will need ${count} to last you until the ripe of old age.`
+        );
+      }
+      //calculateSuply(23, 2);
+
+      //The Geometrizer
+      function calcCircumference(rad) {
+        let calcRad = 2 * Math.PI * rad;
+        console.log(`The circumference is ${calcRad}.`);
+      }
+
+      function calcArea(rad) {
+        let calcArea = Math.PI * Math.pow(rad, 2);
+        console.log(`The area is ${calcArea}.`);
+      }
+      //   calcArea(5);
+      //   calcCircumference(5);
+
+      //The Temperature Conveter
+      function tempConverterF(C) {
+        let conveter = C * 1.8 + 32;
+        console.log(`Celcius ${C} => Fahrenheit ${conveter}.`);
+      }
+      function tempConverterC(F) {
+        let conveter = (5 / 9) * (F - 32);
+        console.log(`Fahrenheit ${F} => Celcius ${conveter}.`);
+      }
+      //   tempConverterF(31);
+      //   tempConverterC(88);
+    </script>
+  </body>
+</html>

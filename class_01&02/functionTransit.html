@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Transit Application</h1>
+    <script>
+      const stations = [
+        "Museum",
+        "St. James",
+        "Circular Quay",
+        "Wynyard",
+        "Townhall",
+        "Central",
+        "Redfern",
+        "Macdonaldtown",
+        "Newtown",
+      ];
+
+      let numArr = [1, 2, 3, 4, 5, 6];
+      // function travelFrom(start, end) {
+      //   for (i = 0; i < stations.length; i++) {
+      //     if (start == stations[i] && end == stations[i]) {
+      //       console.log("Hello");
+      //     }
+      //   }
+      // }
+      //travelFrom("Circular Quay", "Redfern");
+
+      let multiplyNum2 = numArr.forEach(function (a) {
+        let x = a * 2;
+        console.log(x);
+      });
+
+      function multiply(a) {
+        return a * 2;
+      }
+      let multiplyNum = numArr.map(multiply);
+
+      console.log(multiplyNum);
+    </script>
+  </body>
+</html>
